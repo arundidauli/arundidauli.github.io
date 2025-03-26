@@ -62,13 +62,110 @@
             padding: 20px;
             background: #1E1E1E;
         }
-.experience li {
-    margin-bottom: 15px; /* Adds space between job experiences */
-}
+        .experience li {
+            margin-bottom: 15px; /* Adds space between job experiences */
+        }
 
-.experience ul {
-    margin-bottom: 20px; /* Adds space between lists */
-}
+        .experience ul {
+            margin-bottom: 20px; /* Adds space between lists */
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px 0;
+        }
+        
+        .skill {
+            background: #00ADB5; /* Light teal background */
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 15px;
+            border-radius: 20px; /* Rounded pill shape */
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 2px 2px 10px rgba(0, 173, 181, 0.3);
+        }
+        
+        .skill:hover {
+            background: #008C95; /* Darker shade on hover */
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center content */
+            gap: 20px;
+        }
+        
+        .project {
+            flex: 1 1 calc(33.333% - 20px); /* 3 columns on desktop */
+            background: #252525;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 173, 181, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .project:hover {
+            transform: scale(1.05);
+        }
+        
+        .project img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            max-height: 200px; /* Prevent excessive height */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .project h3 {
+            margin: 10px 0;
+            color: #00ADB5;
+        }
+        
+        .project p {
+            font-size: 14px;
+            color: #ccc;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #00ADB5;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .btn:hover {
+            background-color: #008C95;
+            transform: scale(1.05);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .project {
+                flex: 1 1 calc(50% - 20px); /* 2 columns on tablets */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project {
+                flex: 1 1 100%; /* Full width on mobile */
+            }
+        }
+
+
 
     </style>
 </head>
@@ -111,29 +208,54 @@
 
         <section class="section">
             <h2>Expertise & Skills</h2>
-            <p>Android, iOS, Flutter, Dart, Firebase, Supabase, WebSocket, OpenAI, REST API, Google Maps, Provider, BLoC, GetX, Kotlin, Java,Python, Django Rest Framework</p>
+            <div class="skills-container">
+                <span class="skill">Android</span>
+                <span class="skill">iOS</span>
+                <span class="skill">Flutter</span>
+                <span class="skill">Dart</span>
+                <span class="skill">Firebase</span>
+                <span class="skill">Supabase</span>
+                <span class="skill">WebSocket</span>
+                <span class="skill">OpenAI</span>
+                <span class="skill">REST API</span>
+                <span class="skill">Google Maps</span>
+                <span class="skill">Provider</span>
+                <span class="skill">BLoC</span>
+                <span class="skill">GetX</span>
+                <span class="skill">Kotlin</span>
+                <span class="skill">Java</span>
+                <span class="skill">Python</span>
+                <span class="skill">Django Rest Framework</span>
+            </div>
         </section>
 
-        <section class="section">
+
+       <section class="section">
             <h2>Featured Projects</h2>
             <div class="projects">
                 <div class="project">
+                    <img src="https://play-lh.googleusercontent.com/1vEl1_yqInE4vsQMhAm_mdCeQUloAqBeF8zeQhNiuUzb8zI27UUAvhyIlyvv2qeXkTkf=w832-h470-rw" alt="PawPular App">
                     <h3>PawPular</h3>
                     <p>A unique pet app that rewards users for walking their pets using NFTs and Web3 technology.</p>
                     <a href="https://docs.google.com/document/d/1nqo3KRHm0prqC5SQCX2BvfhJMG_wvM3cJBE6c9dltIU/edit?tab=t.0#heading=h.xt11e5w4r2d" class="btn">Visit PawPular</a>
                 </div>
+                
                 <div class="project">
+                    <img src="https://play-lh.googleusercontent.com/d1pqjFoLKinwOBb8uyEuMUywzAiVQJXC2F0q9-NBb8T-vC2ZwzPiveccLb-eJlMXcw=w832-h470-rw" alt="Your Fish App">
                     <h3>Your Fish</h3>
                     <p>A social media platform for fishing enthusiasts to connect, track catches, and find fishing crews.</p>
                     <a href="https://docs.google.com/document/d/1bl66Xz8XZJlNAPH3Lb2CCBfJ_h2u76s0ACIYWVDTnqY/edit?usp=sharing" class="btn">Visit Your Fish</a>
                 </div>
+        
                 <div class="project">
+                    <img src="https://play-lh.googleusercontent.com/C5ZjxYDvz6W8PhmAluHeugsQMJt7LeoqsGt7m5nRM9NtuiWK2ZHCjJrDOPIIdWbaPCSJ=s128-rw" alt="Darzee App">
                     <h3>Darzee App</h3>
                     <p>An all-in-one tailoring management CRM for boutique owners, tailors, and fashion designers.</p>
                     <a href="https://docs.google.com/document/d/1pWkBPxc9NDAP84Vx05Z7HzksrV8Rw4YeDkPu9h9tfG8/edit?usp=sharing" class="btn">Visit Darzee</a>
                 </div>
             </div>
         </section>
+
 
         <section class="section">
             <h2>Other Projects</h2>
