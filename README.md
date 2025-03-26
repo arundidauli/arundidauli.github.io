@@ -52,6 +52,6 @@ Focused on on-time delivery, user experience, and app optimization
 
 📫 Connect with Me
 
-📩 Email: aruninf@infinitysoftsystems.com  🔗 GitHub: github.com/aruninf
+📩 Email: arun080697@gmail.com  🔗 GitHub: github.com/arundidauli
 
 Let's build amazing mobile applications together! 🚀
