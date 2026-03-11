@@ -1,299 +1,833 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arun Kumar - Expert Flutter, Android, and iOS Developer specializing in high-performance mobile applications.">
-    <meta name="keywords" content="Flutter Developer, Android Developer, iOS Developer, Mobile App Development, Arun Kumar, arunandroid, androidarun, arunflutter, best mobile app developer, cross-platform apps, hybrid apps, Play Store, App Store, Firebase, Supabase, GitHub Actions, mobile UI/UX, app optimization">
-    <meta name="author" content="Arun Kumar">
-    <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D03AQGpSJQ6ZrIcwg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696489918445?e=1748476800&v=beta&t=nviuT1lBJh1uYsxzQfZgZYTZBoPtPyf1dRY5kl5v_Xc">
-    <meta property="og:url" content="https://arundidauli.github.io/">
-    <meta property="og:type" content="website">
-    <title>Arun's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 50px 0;
-        }
-        h1 {
-            color: #00ADB5;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 20px 0;
-            background-color: #00ADB5;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .section {
-            margin: 50px 0;
-            padding: 20px;
-            background: #1E1E1E;
-            border-radius: 10px;
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .project {
-            flex: 1 1 45%;
-            background: #252525;
-            margin: 10px;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1E1E1E;
-        }
-        .experience li {
-            margin-bottom: 15px; /* Adds space between job experiences */
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arun Kumar — Full-Stack Mobile Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark:    #0f1e26;
+    --mid:     #152d38;
+    --accent:  #1e8aaa;
+    --accent2: #29c4a0;
+    --ai:      #3dba6e;
+    --ai-bg:   #0d2418;
+    --own:     #7c5cbf;
+    --own-bg:  #160d2a;
+    --text:    #e8eef2;
+    --muted:   #7a9bac;
+    --card:    #162530;
+    --border:  #1e3a4a;
+    --gold:    #e0a030;
+  }
 
-        .experience ul {
-            margin-bottom: 20px; /* Adds space between lists */
-        }
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 10px 0;
-        }
-        
-        .skill {
-            background: #00ADB5; /* Light teal background */
-            color: #fff;
-            font-size: 14px;
-            font-weight: 600;
-            padding: 10px 15px;
-            border-radius: 20px; /* Rounded pill shape */
-            display: inline-block;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 2px 2px 10px rgba(0, 173, 181, 0.3);
-        }
-        
-        .skill:hover {
-            background: #008C95; /* Darker shade on hover */
-            transform: scale(1.1);
-            cursor: pointer;
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; /* Center content */
-            gap: 20px;
-        }
-        
-        .project {
-            flex: 1 1 calc(33.333% - 20px); /* 3 columns on desktop */
-            background: #252525;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 2px 2px 10px rgba(0, 173, 181, 0.3);
-            transition: transform 0.3s ease-in-out;
-        }
-        
-        .project:hover {
-            transform: scale(1.05);
-        }
-        
-        .project img {
-            width: 100%;
-            height: auto; /* Maintain aspect ratio */
-            max-height: 300px; /* Prevent excessive height */
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        
-        .project h3 {
-            margin: 10px 0;
-            color: #00ADB5;
-        }
-        
-        .project p {
-            font-size: 14px;
-            color: #ccc;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 10px 15px;
-            margin-top: 10px;
-            background-color: #00ADB5;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: all 0.3s ease-in-out;
-        }
-        
-        .btn:hover {
-            background-color: #008C95;
-            transform: scale(1.05);
-        }
-        
-        /* Mobile Responsive */
-        @media (max-width: 1024px) {
-            .project {
-                flex: 1 1 calc(50% - 20px); /* 2 columns on tablets */
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .projects {
-                flex-direction: column;
-                align-items: center;
-            }
-            .project {
-                flex: 1 1 100%; /* Full width on mobile */
-            }
-        }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
+  html { scroll-behavior: smooth; }
 
+  body {
+    background: var(--dark);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
 
-    </style>
+  /* ── NOISE TEXTURE ── */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 0; opacity: 0.4;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    background: linear-gradient(135deg, #0a1820 0%, #0f2535 40%, #0d1e2c 100%);
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .hero-glow {
+    position: absolute;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(30,138,170,0.18) 0%, transparent 70%);
+    top: -200px; right: -100px;
+    pointer-events: none;
+  }
+  .hero-glow2 {
+    position: absolute;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(124,92,191,0.12) 0%, transparent 70%);
+    bottom: -100px; left: -50px;
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative; z-index: 1;
+    max-width: 960px; margin: 0 auto;
+    padding: 52px 24px 44px;
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+  }
+
+  .hero-photo {
+    flex-shrink: 0;
+    width: 120px; height: 120px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 32px rgba(30,138,170,0.3);
+  }
+  .hero-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center top;
+  }
+
+  .hero-text { flex: 1; min-width: 0; }
+
+  .hero-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(28px, 5vw, 48px);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .hero-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    font-size: clamp(13px, 2vw, 16px);
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+  }
+
+  .hero-tags {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-bottom: 16px;
+  }
+  .tag {
+    background: rgba(30,138,170,0.12);
+    border: 1px solid rgba(30,138,170,0.3);
+    color: #9ecfdf;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  .tag.ai-tag {
+    background: rgba(61,186,110,0.12);
+    border-color: rgba(61,186,110,0.3);
+    color: #7de0a8;
+  }
+
+  .hero-stats {
+    display: flex; flex-wrap: wrap; gap: 16px;
+    margin-bottom: 18px;
+  }
+  .stat {
+    display: flex; flex-direction: column;
+  }
+  .stat-val {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1;
+  }
+  .stat-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  .stat-divider { width: 1px; background: var(--border); align-self: stretch; }
+
+  .hero-contacts {
+    display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .contact-item {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 13px; color: var(--muted);
+  }
+  .contact-item a { color: var(--accent); text-decoration: none; }
+  .contact-item a:hover { color: var(--accent2); }
+
+  /* ── ADAPATABILITY BAR ── */
+  .adapt-bar {
+    background: linear-gradient(90deg, #0d2535, #102030, #0d2535);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 13px;
+    color: #5fc4d8;
+  }
+  .adapt-bar strong { color: #7adecf; font-weight: 600; }
+
+  /* ── DOWNLOAD BAR ── */
+  .download-bar {
+    background: linear-gradient(90deg, rgba(124,92,191,0.15), rgba(30,138,170,0.15));
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    flex-wrap: wrap;
+  }
+  .download-bar span { font-size: 13px; color: var(--muted); }
+  .btn-download {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: 'Syne', sans-serif;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-download:hover { background: #1a9dbf; transform: translateY(-1px); }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  section { padding: 36px 0 4px; }
+
+  .section-label {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 3vw, 22px);
+    color: #fff;
+    margin-bottom: 18px;
+  }
+
+  /* ── SUMMARY ── */
+  .summary-text {
+    font-size: 15px;
+    color: #b0ccd8;
+    line-height: 1.75;
+    max-width: 780px;
+  }
+
+  /* ── OWN PRODUCT ── */
+  .own-product-card {
+    background: var(--own-bg);
+    border: 1px solid rgba(124,92,191,0.35);
+    border-radius: 14px;
+    padding: 24px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .own-product-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--own), transparent);
+  }
+  .own-product-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #c4a8f0;
+    margin-bottom: 4px;
+  }
+  .own-product-url {
+    font-size: 13px;
+    color: var(--accent);
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .own-product-url:hover { color: var(--accent2); }
+  .stack-line {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .stack-line strong { color: #7a9bac; }
+  .own-product-desc { font-size: 14px; color: #a0bfcc; line-height: 1.65; }
+
+  /* ── AI TOOLKIT ── */
+  .ai-section { background: var(--ai-bg); border-radius: 16px; padding: 24px; margin-top: 8px; }
+  .ai-section-header {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--ai);
+    margin-bottom: 6px;
+    letter-spacing: 0.03em;
+  }
+  .ai-subtitle {
+    font-size: 13px;
+    color: #5db87e;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  .ai-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+  }
+  .ai-card {
+    background: rgba(61,186,110,0.07);
+    border: 1px solid rgba(61,186,110,0.2);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .ai-card-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #7de0a8;
+    margin-bottom: 5px;
+  }
+  .ai-card-desc { font-size: 12px; color: #4d8a61; line-height: 1.55; }
+
+  /* ── EXPERIENCE ── */
+  .job-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+  .job-card::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--accent), transparent);
+  }
+  .job-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    flex-wrap: wrap; gap: 6px;
+    margin-bottom: 4px;
+  }
+  .job-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+  }
+  .job-dates {
+    font-size: 12px;
+    color: var(--muted);
+    background: rgba(255,255,255,0.05);
+    padding: 3px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .job-company {
+    font-size: 13px;
+    color: var(--accent);
+    font-style: italic;
+    margin-bottom: 12px;
+  }
+  .job-bullets { list-style: none; padding: 0; }
+  .job-bullets li {
+    font-size: 13px;
+    color: #9ab8c5;
+    padding: 4px 0 4px 16px;
+    position: relative;
+    line-height: 1.55;
+  }
+  .job-bullets li::before {
+    content: '▸';
+    position: absolute; left: 0;
+    color: var(--accent);
+    font-size: 11px;
+    top: 5px;
+  }
+
+  /* ── PROJECTS GRID ── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .project-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .project-card:hover {
+    border-color: rgba(30,138,170,0.5);
+    transform: translateY(-2px);
+  }
+  .project-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 6px;
+  }
+  .project-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #d4eaf2;
+    flex: 1;
+  }
+  .project-flag {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+  .project-badge {
+    display: inline-block;
+    background: rgba(224,160,48,0.15);
+    border: 1px solid rgba(224,160,48,0.3);
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-bottom: 6px;
+    font-family: 'Syne', sans-serif;
+  }
+  .project-stack {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .project-stack strong { color: #5a8090; }
+  .project-desc { font-size: 13px; color: #7a9bac; line-height: 1.55; }
+  .project-url {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .project-url:hover { color: var(--accent2); }
+
+  /* ── SKILLS ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .skill-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .skill-card.ai-skill {
+    background: rgba(61,186,110,0.07);
+    border-color: rgba(61,186,110,0.2);
+  }
+  .skill-card.be-skill {
+    background: rgba(224,160,48,0.06);
+    border-color: rgba(224,160,48,0.2);
+  }
+  .skill-cat {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .skill-card.ai-skill .skill-cat { color: var(--ai); }
+  .skill-card.be-skill .skill-cat { color: var(--gold); }
+  .skill-card .skill-cat { color: var(--accent); }
+  .skill-vals { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+  /* ── FOOTER ── */
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .footer-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .footer-card-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .footer-card p { font-size: 13px; color: #8aacba; line-height: 1.6; }
+  .footer-card a { color: var(--accent); text-decoration: none; font-size: 13px; display: block; margin-bottom: 4px; }
+  .footer-card a:hover { color: var(--accent2); }
+
+  .page-footer {
+    text-align: center;
+    padding: 20px 24px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hero-inner { animation: fadeUp 0.6s ease both; }
+  .adapt-bar  { animation: fadeUp 0.6s 0.1s ease both; }
+
+  /* ── MOBILE ── */
+  @media (max-width: 600px) {
+    .hero-inner { flex-direction: column; align-items: center; text-align: center; gap: 20px; padding: 36px 20px 32px; }
+    .hero-photo { width: 96px; height: 96px; }
+    .hero-contacts { justify-content: center; }
+    .hero-stats { justify-content: center; }
+    .stat-divider { display: none; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .ai-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .download-bar { flex-direction: column; gap: 8px; text-align: center; }
+    .hero-tags { justify-content: center; }
+  }
+  @media (max-width: 400px) {
+    .skills-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>👨‍💻 Arun's Portfolio</h1>
-            <p>Mobile App Developer | Flutter | Android | iOS</p>
-            <a href="https://drive.google.com/file/d/1CLi5nTQU3Hvbp12HeKs_t41VR5QTeVJd/view?usp=sharing" download class="btn">Download Resume</a>
-        </header>
 
-        <section class="section">
-            <h2>Professional Summary</h2>
-            <p>A skilled Mobile App Developer with expertise in Android, iOS, and Flutter, specializing in
-high-performance, user-friendly applications. Experienced in hybrid app development and
-working with global clients from Australia, the USA, and Dubai.
-Proficient in client communication, project upgrades, and ensuring compliance with App Store
-& Play Store policies. Expert in CI/CD pipelines for seamless app publishing and release
-management.</p>
-            <p>Strong experience in task management using Jira, Trello, and Monday, ensuring efficient workflows
-and timely project delivery. Committed to maintaining high-quality standards, addressing client
-feedback effectively, and delivering fully optimized applications.</p>
-        </section>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <div class="hero-photo">
+      <!-- Profile photo from Google Drive direct link -->
+      <img
+        src="https://drive.google.com/thumbnail?id=1JkCcnzImnZm-XD3QnFQY1oz1MNRvcHYj&sz=w400"
+        alt="Arun Kumar"
+        onerror="this.style.display='none'; this.parentElement.style.background='#1e3a4a'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:Syne,sans-serif;font-size:36px;font-weight:800;color:#2980a0\'>AK</div>'"
+      />
+    </div>
+    <div class="hero-text">
+      <div class="hero-name">Arun Kumar</div>
+      <div class="hero-title">Full-Stack Mobile Engineer &nbsp;·&nbsp; Product Builder</div>
+      <div class="hero-tags">
+        <span class="tag">Flutter</span>
+        <span class="tag">Android</span>
+        <span class="tag">iOS</span>
+        <span class="tag">React Native</span>
+        <span class="tag">Django / Python</span>
+        <span class="tag">Next.js</span>
+        <span class="tag ai-tag">⚡ AI-Dev Native</span>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-val">4+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-val">15+</span>
+          <span class="stat-label">Apps Shipped</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-val">30K+</span>
+          <span class="stat-label">Live Users</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-val">AU · US · AE</span>
+          <span class="stat-label">Global Clients</span>
+        </div>
+      </div>
+      <div class="hero-contacts">
+        <div class="contact-item">📍 Delhi, India (Open to Remote)</div>
+        <div class="contact-item">📞 9389550053</div>
+        <div class="contact-item">✉ <a href="mailto:arun080697@gmail.com">arun080697@gmail.com</a></div>
+        <div class="contact-item">🔗 <a href="https://www.linkedin.com/in/arun-kumar-172b57220/" target="_blank">LinkedIn</a></div>
+        <div class="contact-item">🌐 <a href="https://arundidauli.github.io/" target="_blank">GitHub Page</a></div>
+      </div>
+    </div>
+  </div>
+</header>
 
-        
-        <section class="section">
-            <h2>Experience</h2>
-            <ul class="experience">
-                <li><strong>Shine Web Solutions Pvt. Ltd.</strong> – Android & Flutter Developer (2 Years)</li>
-                <ul>
-                    <li>Developed Android & Flutter apps with optimized performance and smooth UI/UX.</li>
-                    <li>Integrated REST APIs, Firebase, Supabase, and real-time features.</li>
-                    <li>Implemented state management (GetX, Provider, BLoC) for scalable architecture.</li>
-                    <li>Published apps on Google Play Store & App Store, ensuring quality and timely updates.</li>
-                    <li>Managed release cycles and CI/CD automation with GitHub Actions.</li>
-                </ul>
-        
-                <li><strong>Infinity Soft Systems</strong> – Mobile App Developer (Past 2 Years)</li>
-                <ul>
-                    <li>Delivered 10+ mobile applications for clients in Australia and New Zealand.</li>
-                    <li>Worked with Flutter, iOS Native, React Native, and Android Native technologies.</li>
-                    <li>Expertise in App Store & Play Store guidelines for smooth app approvals.</li>
-                    <li>Managed release management and automation using GitHub Actions.</li>
-                </ul>
-            </ul>
-        </section>
+<!-- ADAPTABILITY BAR -->
+<div class="adapt-bar">
+  <strong>Technology-agnostic</strong> — fast adopter of new languages, frameworks & tools with no onboarding friction — <strong>Mobile + Backend + Web + AI</strong>
+</div>
 
-        <section class="section">
-            <h2>Expertise & Skills</h2>
-            <div class="skills-container">
-                <span class="skill">Android</span>
-                <span class="skill">iOS</span>
-                <span class="skill">Flutter</span>
-                <span class="skill">Dart</span>
-                <span class="skill">Firebase</span>
-                <span class="skill">Supabase</span>
-                <span class="skill">WebSocket</span>
-                <span class="skill">OpenAI</span>
-                <span class="skill">REST API</span>
-                <span class="skill">Google Maps</span>
-                <span class="skill">Provider</span>
-                <span class="skill">BLoC</span>
-                <span class="skill">GetX</span>
-                <span class="skill">Kotlin</span>
-                <span class="skill">Java</span>
-                <span class="skill">Python</span>
-                <span class="skill">Django Rest Framework</span>
-            </div>
-        </section>
+<!-- DOWNLOAD BAR -->
+<div class="download-bar">
+  <span>Full resume available as Word document</span>
+  <a class="btn-download" href="https://docs.google.com/document/d/19VdDAvXkDdccxB1_WSbuyek7w0a7UdJy/edit?usp=sharing&ouid=106417851871525539838&rtpof=true&sd=true" target="_blank">
+    ↓ Download Resume (DOCX)
+  </a>
+</div>
 
+<div class="container">
 
-       <section class="section">
-            <h2>Featured Projects</h2>
-            <div class="projects">
+  <!-- SUMMARY -->
+  <section>
+    <div class="section-label">About</div>
+    <p class="summary-text">
+      Full-Stack Mobile Engineer and product builder with 4+ years delivering production apps across Flutter, Android, iOS, React Native, and Django/Python backends. Independently built and shipped a live product serving real users. Worked with global clients across Australia, New Zealand, USA, and Dubai. Rapid technology adopter — comfortable moving into new languages and frameworks with no ramp-up friction. Early AI-dev practitioner using Claude Code CLI, OpenAI Codex, Copilot, and Cursor — 100% of development tasks driven by AI tools, with expert prompting that gets results right first time and keeps token usage lean. Thrives in async-first, remote-distributed team environments.
+    </p>
+  </section>
 
-                <div class="project">
-                    <img src="https://play-lh.googleusercontent.com/4lCvhd3g03Eh3sd_YjwNrzoaqEUb0uYL5LGgphD_NM3EdfgkG2TP1_tKLfsxMY31cA_V=w1052-h592-rw" alt="Artesian App">
-                    <h3>Artesian App</h3>
-                    <p>Earn points for every purchase at iconic Artesian Hospitality venues, including Cali Beach and Surfers Pavilion, plus ultimate nightlife destinations Bedroom Lounge Bar, SinCity and Havana.</p>
-                    <a href="https://artesiancorp.com/" class="btn">Visit Artesian</a>
-                </div>
+  <!-- OWN PRODUCT -->
+  <section>
+    <div class="section-label">Own Live Product</div>
+    <div class="own-product-card">
+      <div class="own-product-title">Bicholiyas — Building Materials Marketplace</div>
+      <a class="own-product-url" href="https://bicholiyas.in/" target="_blank">bicholiyas.in ↗</a>
+      <div class="stack-line"><strong>Stack:</strong> Next.js, Django REST Framework, Python, PostgreSQL, Flutter (mobile app)</div>
+      <div class="own-product-desc">
+        Online marketplace for building materials — cement, iron rods, and construction supplies. Independently designed, built, and deployed the complete product: web app, mobile app, and backend API. Sole developer across the entire stack — from infrastructure to UI to store publishing.
+      </div>
+    </div>
+  </section>
 
-                 <div class="project">
-                    <img src="https://play-lh.googleusercontent.com/OL_5wLipR1ovqKQp39DU3W-tHY07iEPuSq9vviNncqyRBWGto0ekJvZjG8Z89xde1g=w1052-h592-rw" alt="Goals FM App">
-                    <h3>Goals FM</h3>
-                    <p>GoalsFM is the personal wealth platform designed for elite athletes who want to take control of their money, track their spending, grow their wealth, and protect their financial future—all in one secure, automated app..</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.appifany.goalsfm" class="btn">Visit Goals FM</a>
-                </div>
-                
-                <div class="project">
-                    <img src="https://pawpular.io/assets/images/pawpular-go-app/slider-img.png" alt="PawPular App">
-                    <h3>PawPular</h3>
-                    <p>A unique pet app that rewards users for walking their pets using NFTs and Web3 technology.</p>
-                    <a href="https://pawpular.io/pawpular-go-app" class="btn">Visit PawPular</a>
-                </div>
-                
-                <div class="project">
-                    <img src="https://static.wixstatic.com/media/3d614c_f105052be7aa49dd8496ac8deddfa6fa~mv2.jpg/v1/fill/w_1851,h_1080,al_c,q_90,enc_avif,quality_auto/3d614c_f105052be7aa49dd8496ac8deddfa6fa~mv2.jpg" alt="Your Fish App">
-                    <h3>Your Fish</h3>
-                    <p>A social media platform for fishing enthusiasts to connect, track catches, and find fishing crews.</p>
-                    <a href="https://www.yourfish.com.au/" class="btn">Visit Your Fish</a>
-                </div>
-        
-                <div class="project">
-                    <img src="https://static.wixstatic.com/media/35c310_0bb5aa06c2eb4675a17dcacf60bdb38b~mv2.png/v1/fill/w_1580,h_1040,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/35c310_0bb5aa06c2eb4675a17dcacf60bdb38b~mv2.png" alt="Darzee App">
-                    <h3>Darzee App</h3>
-                    <p>An all-in-one tailoring management CRM for boutique owners, tailors, and fashion designers.</p>
-                    <a href="https://www.darzeeapp.com/" class="btn">Visit Darzee</a>
-                </div>
+  <!-- AI TOOLKIT -->
+  <section>
+    <div class="section-label">AI-Powered Development</div>
+    <div class="ai-section">
+      <div class="ai-section-header">⚡ AI-Powered Development Toolkit — 10x Delivery</div>
+      <div class="ai-subtitle">100% of dev tasks driven by AI — code, bugs, boilerplate, reviews — expert prompting, right first time, minimal tokens</div>
+      <div class="ai-grid">
+        <div class="ai-card">
+          <div class="ai-card-title">⚡ Claude Code CLI</div>
+          <div class="ai-card-desc">Agentic coding, refactoring & boilerplate generation at terminal speed — 10x faster delivery</div>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card-title">⚡ OpenAI Codex</div>
+          <div class="ai-card-desc">AI pair programming for Flutter/Dart & Python — widget trees, API layers, unit tests</div>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card-title">⚡ GitHub Copilot</div>
+          <div class="ai-card-desc">Real-time inline completions across all stacks — mobile, backend, web</div>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card-title">⚡ OpenClaw / OpenAI API</div>
+          <div class="ai-card-desc">Integrates LLM features into mobile apps — smart prompting, tasks done in one shot, token usage lean</div>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card-title">⚡ Cursor IDE</div>
+          <div class="ai-card-desc">AI-first editor — multi-file context, codebase-aware completions across large Flutter projects</div>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card-title">⚡ v0 / AI UI Generation</div>
+          <div class="ai-card-desc">Natural language to Flutter/React UI — 70% faster design-to-code turnaround</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                 <div class="project">
-                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/f7/ae/24/f7ae2462-a4c4-9904-736b-6d7aebc3f0d9/12427046-0880-45e4-8a43-b1c18fdc1980_2.png/460x0w.webp" alt="The Goat App">
-                    <h3>The Goat</h3>
-                    <p>If you love watching mind bending clips of chargers breaking new ground every day, you'll find them on The GOAT.</p>
-                    <a href="https://thegoatapp.au/#welcome" class="btn">Visit The Goat</a>
-                </div>
-            </div>
-        </section>
+  <!-- EXPERIENCE -->
+  <section>
+    <div class="section-label">Experience</div>
 
-
-        <section class="section">
-            <h2>Other Projects</h2>
-            <p>Faweeth, Connectable, Construction Work, Mnetal Floss, Job Matched, and many more.</p>
-        </section>
+    <div class="job-card">
+      <div class="job-header">
+        <div class="job-title">Senior Software Engineer & Team Lead</div>
+        <div class="job-dates">06/2023 – Present</div>
+      </div>
+      <div class="job-company">Infinity Soft Systems — Noida, UP, India | Remote-capable</div>
+      <ul class="job-bullets">
+        <li>Delivered 10+ production apps for clients in Australia & New Zealand using Flutter, React Native, iOS Native, Android Native.</li>
+        <li>Integrated AI features via OpenAI API (OpenClaw) — smart search, in-app assistants, and recommendation engines.</li>
+        <li>Automated full CI/CD pipeline via GitHub Actions + Fastlane — cut release turnaround from 2 days to under 2 hours.</li>
+        <li>Led team of 4 with async-first workflow (Jira + Notion + Slack) mirroring remote-first global team culture.</li>
+        <li>Zero rejected builds across 12+ consecutive App Store & Play Store release cycles.</li>
+        <li>Used Claude Code CLI and Cursor IDE daily — measurably increased team feature delivery velocity by 10x.</li>
+      </ul>
     </div>
 
-    <footer>
-        <p>Connect with me on GitHub: <a href="https://github.com/arundidauli" style="color:#00ADB5;">@arundidauli</a></p>
-    </footer>
+    <div class="job-card">
+      <div class="job-header">
+        <div class="job-title">Flutter Developer</div>
+        <div class="job-dates">09/2021 – 08/2023</div>
+      </div>
+      <div class="job-company">Shine Web Solutions Pvt. Ltd. — Noida, UP, India</div>
+      <ul class="job-bullets">
+        <li>Built 6+ Flutter & Android apps with Firebase, Supabase, REST APIs, WebSockets, and payment gateway integrations.</li>
+        <li>Implemented GetX, Provider, and BLoC state management patterns for scalable, maintainable architectures.</li>
+        <li>Built Python/Django REST APIs supporting mobile app backends — auth, CRUD, and real-time data endpoints.</li>
+        <li>Early adopter of GitHub Copilot — increased personal feature output by 40%.</li>
+        <li>Collaborated asynchronously with overseas clients, building strong remote communication habits.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CLIENT PROJECTS -->
+  <section>
+    <div class="section-label">Client Projects Delivered</div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">Darzee App</div>
+          <div class="project-flag">🇮🇳</div>
+        </div>
+        <div class="project-badge">★ 30,000+ Users</div>
+        <div class="project-stack"><strong>Stack:</strong> Flutter, Android, iOS, REST API, Firebase</div>
+        <div class="project-desc">Flutter mobile app for tailoring businesses — scheduling, orders, client management. Live on Play Store & App Store.</div>
+        <a class="project-url" href="https://www.darzeeapp.com/" target="_blank">darzeeapp.com ↗</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">Disport</div>
+          <div class="project-flag">🇦🇺</div>
+        </div>
+        <div class="project-stack"><strong>Stack:</strong> React Native, Android & iOS</div>
+        <div class="project-desc">Instagram-style sports social platform for athletes — video posts, profiles, leaderboard. Live on Play Store & App Store.</div>
+        <a class="project-url" href="https://www.disport.com.au/" target="_blank">disport.com.au ↗</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">Faweeth</div>
+          <div class="project-flag">🇦🇪</div>
+        </div>
+        <div class="project-stack"><strong>Stack:</strong> Flutter, Multi-language AR/EN, REST API</div>
+        <div class="project-desc">Building materials marketplace for Dubai — cement, iron rods, construction supplies. Full Arabic & English localisation.</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">The Goat</div>
+          <div class="project-flag">🇦🇺</div>
+        </div>
+        <div class="project-stack"><strong>Stack:</strong> Flutter, Firebase, WebSockets</div>
+        <div class="project-desc">Social platform for elite athletes — video sharing, GOAT leaderboard, real-time feed. Think Instagram for the world's greatest athletes.</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">Medhub</div>
+          <div class="project-flag">🇮🇳</div>
+        </div>
+        <div class="project-stack"><strong>Stack:</strong> Flutter, Firebase, Django REST API</div>
+        <div class="project-desc">On-demand medicine delivery — real-time inventory, prescriptions, delivery tracking. Flutter frontend with Django/Python backend.</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">Your Fish</div>
+          <div class="project-flag">🇦🇺</div>
+        </div>
+        <div class="project-stack"><strong>Stack:</strong> Flutter, Firebase, Google Maps</div>
+        <div class="project-desc">Social app for fishing enthusiasts — community posts, location-based spots, catch logs.</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">T1 — Electrician Platform</div>
+          <div class="project-flag">🇮🇳</div>
+        </div>
+        <div class="project-stack"><strong>Stack:</strong> Flutter, Android, iOS</div>
+        <div class="project-desc">Task management for electricians — job scheduling, client assignments, real-time status updates.</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">Pawpular</div>
+          <div class="project-flag">🇺🇸</div>
+        </div>
+        <div class="project-stack"><strong>Stack:</strong> Flutter, Web3, NFT integration</div>
+        <div class="project-desc">Blockchain-based pet reward system — NFT collectibles, wallet integration, reward redemption.</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">Job Matched</div>
+          <div class="project-flag">🇦🇺</div>
+        </div>
+        <div class="project-stack"><strong>Stack:</strong> Flutter, OpenAI API, Firebase</div>
+        <div class="project-desc">AI-powered job matching platform — smart candidate scoring and role recommendations via OpenAI API.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <div class="section-label">Skills & Stack</div>
+    <div class="skills-grid">
+      <div class="skill-card"><div class="skill-cat">Mobile</div><div class="skill-vals">Flutter, Android Native, iOS Native, React Native</div></div>
+      <div class="skill-card"><div class="skill-cat">Languages</div><div class="skill-vals">Dart, Kotlin, Java, JavaScript, TypeScript, Python</div></div>
+      <div class="skill-card"><div class="skill-cat">State Mgmt</div><div class="skill-vals">GetX, Provider, BLoC, Riverpod</div></div>
+      <div class="skill-card be-skill"><div class="skill-cat">Backend & APIs</div><div class="skill-vals">Django REST Framework, REST API, GraphQL, WebSockets</div></div>
+      <div class="skill-card be-skill"><div class="skill-cat">Python & DB</div><div class="skill-vals">Python, PostgreSQL, SQLite, Firebase, Supabase</div></div>
+      <div class="skill-card"><div class="skill-cat">Web Frontend</div><div class="skill-vals">Next.js, React, HTML/CSS, Tailwind CSS</div></div>
+      <div class="skill-card ai-skill"><div class="skill-cat">⚡ AI Dev Tools</div><div class="skill-vals">Claude Code CLI, OpenAI Codex, Copilot, Cursor</div></div>
+      <div class="skill-card ai-skill"><div class="skill-cat">⚡ LLM & OpenAI</div><div class="skill-vals">OpenAI API, OpenClaw, Prompt Engineering, Token Optimization</div></div>
+      <div class="skill-card ai-skill"><div class="skill-cat">⚡ AI Integration</div><div class="skill-vals">Streaming APIs, Function Calling, RAG, AI Agents</div></div>
+      <div class="skill-card"><div class="skill-cat">DevOps & CI/CD</div><div class="skill-vals">GitHub Actions, Fastlane, GitLab CI, Docker basics</div></div>
+      <div class="skill-card"><div class="skill-cat">Store & Release</div><div class="skill-vals">Play Store, App Store, TestFlight, Firebase Distribution</div></div>
+      <div class="skill-card"><div class="skill-cat">Remote & Tools</div><div class="skill-vals">Jira, Trello, Notion, Slack, Loom, Monday, Figma</div></div>
+    </div>
+  </section>
+
+  <!-- FOOTER INFO -->
+  <section>
+    <div class="section-label">Education & More</div>
+    <div class="footer-grid">
+      <div class="footer-card">
+        <div class="footer-card-title">Education</div>
+        <p><strong style="color:#d4eaf2">B.Tech — Computer Science & Engineering</strong><br>Graduated December 2019</p>
+      </div>
+      <div class="footer-card">
+        <div class="footer-card-title">Recognition</div>
+        <p><strong style="color:#d4eaf2">Employee of the Year</strong><br>Awarded multiple times for delivery & leadership excellence.</p>
+      </div>
+      <div class="footer-card">
+        <div class="footer-card-title">Languages</div>
+        <p>English — B2 Upper Intermediate<br>Hindi — B2 Upper Intermediate (Native)</p>
+      </div>
+      <div class="footer-card">
+        <div class="footer-card-title">Remote Ready</div>
+        <p>Slack, Notion, Loom, Linear, Zoom<br><span style="color:#4a7080">Async-first · AU · US · UAE time zones</span></p>
+      </div>
+      <div class="footer-card">
+        <div class="footer-card-title">Profiles</div>
+        <a href="https://www.linkedin.com/in/arun-kumar-172b57220/" target="_blank">LinkedIn ↗</a>
+        <a href="https://arundidauli.github.io/" target="_blank">GitHub Page ↗</a>
+        <a href="https://docs.google.com/document/d/19VdDAvXkDdccxB1_WSbuyek7w0a7UdJy/edit?usp=sharing&ouid=106417851871525539838&rtpof=true&sd=true" target="_blank">Download Resume ↗</a>
+      </div>
+      <div class="footer-card">
+        <div class="footer-card-title">Interests</div>
+        <p>AI Agents &nbsp;·&nbsp; Music &nbsp;·&nbsp; Gym &nbsp;·&nbsp; Driving &nbsp;·&nbsp; Open Source</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="page-footer">
+  Arun Kumar &nbsp;·&nbsp; Full-Stack Mobile Engineer &nbsp;·&nbsp; Open to Remote &nbsp;·&nbsp; arun080697@gmail.com
+</div>
+
 </body>
 </html>
