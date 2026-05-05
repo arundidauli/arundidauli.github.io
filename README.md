@@ -1,57 +1,69 @@
-Arun Kumar - Mobile App Developer
+# Arun Kumar
 
-Welcome to My Portfolio
+Full-Stack Mobile Engineer and Product Builder focused on Flutter, React Native, Android, iOS, Django/Python, Next.js, and AI-assisted development.
 
-Hi, I'm Arun Kumar, a passionate mobile app developer specializing in Android, iOS, and Flutter. I have delivered over 50+ projects worldwide, focusing on performance, UI/UX, and clean code architecture. Explore my work below!
+## Snapshot
 
-🚀 Expertise
+- 5+ years building production mobile products
+- 25+ apps live
+- 45K+ global users reached
+- Delhi, India — open to remote roles
+- Email: arun080697@gmail.com
+- Phone: +91 9389550053
+- LinkedIn: https://www.linkedin.com/in/arun-kumar-172b57220/
+- Portfolio: https://arundidauli.github.io/
 
-Hybrid App Development (Android & iOS using Flutter)
+## Professional Summary
 
-State Management (GetX, Bloc, Provider)
+I build mobile apps first, with backend and product ownership where needed. My core stack is Flutter, React Native, Android, iOS, Django REST Framework, Python, and Next.js. I have delivered products for clients across Australia, New Zealand, the US, UAE, and India, and I have also independently built and launched my own live product.
 
-Backend Integration (Firebase, Supabase, WebSockets, OpenAI, REST APIs)
+I work effectively with modern AI tools such as Claude Code CLI, Cursor, GitHub Copilot, Codex, and OpenAI APIs, while staying fully comfortable in teams that expect traditional engineering discipline, architecture ownership, and production-ready delivery without depending on AI.
 
-Cloud Services & Database (Google Maps, Firestore, Real-Time DB)
+## Own Product
 
-Version Control (Git, GitHub, GitLab)
+### Bicholiyas
+- Website: https://bicholiyas.in/
+- Stack: Next.js, Django REST Framework, Python, PostgreSQL, Flutter
+- Built, deployed, and maintained independently across web, mobile, and backend APIs.
 
-App Store & Play Store Management
+## Experience
 
-💡 Key Projects
+### Senior Software Engineer & Team Lead
+**Infinity Soft Systems** · Jun 2023 to Present
 
-🏗 Construction Work App
+- Delivered 10+ production apps across Flutter, React Native, Android, and iOS.
+- Built Django REST APIs with auth, CRUD, WebSockets, and third-party integrations.
+- Integrated AI features and reduced LLM API costs by about 60% in production use cases.
+- Automated CI/CD with GitHub Actions and Fastlane.
 
-Project management for construction businesses
+### Flutter Developer
+**Shine Web Solutions Pvt. Ltd.** · Sep 2021 to Aug 2023
 
-Real-time tracking and updates
+- Delivered Flutter and Android apps with Firebase, Supabase, REST APIs, and WebSockets.
+- Built mobile-first backend APIs with Django REST Framework.
+- Worked with GetX, Provider, and BLoC for maintainable app architecture.
 
-[🐠 Your Fish](https://docs.google.com/document/d/1bl66Xz8XZJlNAPH3Lb2CCBfJ_h2u76s0ACIYWVDTnqY/edit?usp=sharing)
+## Selected Projects
 
-Social media platform for fishing enthusiasts
+- **Darzee App** — Flutter tailoring management app with 30,000+ users.
+- **Disport** — React Native sports social platform for Australia.
+- **Faweeth** — Flutter marketplace with Arabic and English localisation.
+- **Medhub** — Medicine delivery app with Django/Python backend.
+- **Your Fish** — Social network for fishing enthusiasts.
+- **Pawpular** — NFT-based pet rewards app.
+- **Jobwish** — AI-powered job platform using OpenAI APIs.
 
-Features like chat, post sharing, and community engagement
+## Certifications
 
-[✂ Darzee App](https://docs.google.com/document/d/1pWkBPxc9NDAP84Vx05Z7HzksrV8Rw4YeDkPu9h9tfG8/edit?usp=sharing)
+- Claude Code in Action — Anthropic — https://lnkd.in/gDBbTNMb
+- Introduction to Agent Skills — Anthropic — https://lnkd.in/gcemyf9C
 
-Tailor and boutique management CRM
+## Skills
 
-Automated billing, customer tracking, and inventory management
-
-[🐾 Pawpular](https://docs.google.com/document/d/1nqo3KRHm0prqC5SQCX2BvfhJMG_wvM3cJBE6c9dltIU/edit?tab=t.0#heading=h.xt11e5w4r2d)
-
-Walk-to-earn rewards app for pet lovers
-
-NFT and blockchain-based earning system
-
-🌍 Clients & Work Experience
-
-Delivered projects for India, USA, Dubai, and Australia clients
-
-Focused on on-time delivery, user experience, and app optimization
-
-📫 Connect with Me
-
-📩 Email: arun080697@gmail.com  🔗 GitHub: github.com/arundidauli
-
-Let's build amazing mobile applications together! 🚀
+- Mobile: Flutter, React Native, Android Native, iOS Native
+- Backend: Django, Django REST Framework, GraphQL, WebSockets
+- Languages: Dart, Kotlin, Java, JavaScript, TypeScript, Python
+- Databases: PostgreSQL, SQLite, Firebase, Supabase
+- Web: Next.js, React, HTML, CSS, Tailwind CSS
+- AI: OpenAI API, RAG, function calling, prompt engineering, token optimisation
+- DevOps: GitHub Actions, Fastlane, GitLab CI, Docker basics
