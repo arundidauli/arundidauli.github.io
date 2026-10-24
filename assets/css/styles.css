@@ -525,11 +525,14 @@ nav {
   border: 1px solid;
 }
 
-.ptag.flutter { color: #54c5f8; border-color: rgba(84, 197, 248, 0.3); background: rgba(84, 197, 248, 0.08); }
-.ptag.rn      { color: #61dafb; border-color: rgba(97, 218, 251, 0.3); background: rgba(97, 218, 251, 0.08); }
-.ptag.ios     { color: #d1d5db; border-color: rgba(209, 213, 219, 0.3); background: rgba(209, 213, 219, 0.08); }
-.ptag.android { color: #78c257; border-color: rgba(120, 194, 87, 0.3); background: rgba(120, 194, 87, 0.08); }
-.ptag.backend { color: #fbbf24; border-color: rgba(251, 191, 36, 0.3); background: rgba(251, 191, 36, 0.08); }
+.ptag.flutter  { color: #54c5f8; border-color: rgba(84, 197, 248, 0.3); background: rgba(84, 197, 248, 0.08); }
+.ptag.rn       { color: #61dafb; border-color: rgba(97, 218, 251, 0.3); background: rgba(97, 218, 251, 0.08); }
+.ptag.ios      { color: #d1d5db; border-color: rgba(209, 213, 219, 0.3); background: rgba(209, 213, 219, 0.08); }
+.ptag.android  { color: #78c257; border-color: rgba(120, 194, 87, 0.3); background: rgba(120, 194, 87, 0.08); }
+.ptag.backend  { color: #fbbf24; border-color: rgba(251, 191, 36, 0.3); background: rgba(251, 191, 36, 0.08); }
+.ptag.robotics { color: #ff6b35; border-color: rgba(255, 107, 53, 0.35); background: rgba(255, 107, 53, 0.08); }
+.ptag.ros      { color: #c084fc; border-color: rgba(192, 132, 252, 0.35); background: rgba(192, 132, 252, 0.08); }
+.ptag.ml       { color: #10b981; border-color: rgba(16, 185, 129, 0.35); background: rgba(16, 185, 129, 0.08); }
 
 /* ==========================================================================
    NUMBERS / PROOF STRIP
@@ -686,6 +689,8 @@ section {
 .app-header.yourfish    { background: rgba(15, 92, 107, 0.3); }
 .app-header.theplatform { background: rgba(74, 35, 90, 0.3); }
 .app-header.jobwish     { background: rgba(26, 107, 58, 0.3); }
+.app-header.robotics    { background: rgba(255, 107, 53, 0.15); }
+.app-header.microduck   { background: rgba(168, 85, 247, 0.15); }
 
 .app-name {
   font-family: var(--font-heading);
@@ -727,6 +732,18 @@ section {
   color: #c4a8ff;
   border-color: rgba(196, 168, 255, 0.35);
   background: rgba(196, 168, 255, 0.08);
+}
+
+.app-platform-badge.robotics {
+  color: #ff6b35;
+  border-color: rgba(255, 107, 53, 0.35);
+  background: rgba(255, 107, 53, 0.08);
+}
+
+.app-platform-badge.ros {
+  color: #c084fc;
+  border-color: rgba(192, 132, 252, 0.35);
+  background: rgba(192, 132, 252, 0.08);
 }
 
 .app-body {
