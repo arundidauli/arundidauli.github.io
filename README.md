@@ -1,69 +1,39 @@
-# Arun Kumar
+# Arun Kumar — Senior Mobile & Full-Stack Engineer
 
-Full-Stack Mobile Engineer and Product Builder focused on Flutter, React Native, Android, iOS, Django/Python, Next.js, and AI-assisted development.
+> 5+ years architecting and shipping production software across **Flutter, React Native, iOS, Android**, and **Django/Next.js** backends. Shipped 25+ apps globally across Australia, USA, UAE, and India, serving over **45,000+ real users**.
 
-## Snapshot
+- 🌐 **Live Portfolio:** [arundidauli.github.io](https://arundidauli.github.io/)
+- 📄 **Direct Resume (PDF):** [View Resume](https://arundidauli.github.io/assets/Arun_Kumar_Resume.pdf)
+- 💼 **LinkedIn:** [linkedin.com/in/arun-kumar-172b57220](https://www.linkedin.com/in/arun-kumar-172b57220/)
+- 📧 **Email:** [arun080697@gmail.com](mailto:arun080697@gmail.com)
+- 📍 **Location:** Delhi NCR, India (Available for Remote roles worldwide)
 
-- 5+ years building production mobile products
-- 25+ apps live
-- 45K+ global users reached
-- Delhi, India — open to remote roles
-- Email: arun080697@gmail.com
-- Phone: +91 9389550053
-- LinkedIn: https://www.linkedin.com/in/arun-kumar-172b57220/
-- Portfolio: https://arundidauli.github.io/
+---
 
-## Professional Summary
+## 🏆 Key Achievements & Impact
 
-I build mobile apps first, with backend and product ownership where needed. My core stack is Flutter, React Native, Android, iOS, Django REST Framework, Python, and Next.js. I have delivered products for clients across Australia, New Zealand, the US, UAE, and India, and I have also independently built and launched my own live product.
+- **30,000+ Active Users:** Scaled [Darzee App](https://www.darzeeapp.com/) on Play Store & App Store with offline-first BLoC architecture.
+- **Independent Startup:** Designed, built, and launched [Bicholiyas](https://bicholiyas.in/) end-to-end across Next.js, Django REST, PostgreSQL, and Flutter.
+- **Fastlane & CI/CD:** Cut App Store release turnaround time from 2 days down to under 2 hours.
+- **Zero Build Rejections:** 100% first-pass approval record across 12+ consecutive release cycles.
+- **Production AI Engineering:** Engineered prompt caching and context management that cut LLM API costs by ~60% in live applications.
 
-I work effectively with modern AI tools such as Claude Code CLI, Cursor, GitHub Copilot, Codex, and OpenAI APIs, while staying fully comfortable in teams that expect traditional engineering discipline, architecture ownership, and production-ready delivery without depending on AI.
+---
 
-## Own Product
+## 🚀 Flagship Projects
 
-### Bicholiyas
-- Website: https://bicholiyas.in/
-- Stack: Next.js, Django REST Framework, Python, PostgreSQL, Flutter
-- Built, deployed, and maintained independently across web, mobile, and backend APIs.
+1. **[Darzee App](https://www.darzeeapp.com/)** (`Flutter` `Android` `iOS` `Firebase` `REST API`) — 30,000+ active tailoring businesses across India.
+2. **[Bicholiyas](https://bicholiyas.in/)** (`Next.js` `Django REST` `PostgreSQL` `Flutter`) — Fullstack matrimonial community product.
+3. **[Disport](https://www.disport.com.au/)** (`React Native` `Android` `iOS` `WebSockets`) — Australian athletic social network with video reels and leaderboards.
+4. **[Faweeth](https://faweeth.com/)** (`Flutter` `Django REST` `Arabic RTL / EN`) — Dubai construction materials procurement marketplace.
+5. **[The Goat](https://thegoat.com.au/)** (`Flutter` `Firebase` `WebSockets`) — Real-time competitive sports ranking platform for Australia.
 
-## Experience
+---
 
-### Senior Software Engineer & Team Lead
-**Infinity Soft Systems** · Jun 2023 to Present
+## 🛠️ Technical Competencies
 
-- Delivered 10+ production apps across Flutter, React Native, Android, and iOS.
-- Built Django REST APIs with auth, CRUD, WebSockets, and third-party integrations.
-- Integrated AI features and reduced LLM API costs by about 60% in production use cases.
-- Automated CI/CD with GitHub Actions and Fastlane.
-
-### Flutter Developer
-**Shine Web Solutions Pvt. Ltd.** · Sep 2021 to Aug 2023
-
-- Delivered Flutter and Android apps with Firebase, Supabase, REST APIs, and WebSockets.
-- Built mobile-first backend APIs with Django REST Framework.
-- Worked with GetX, Provider, and BLoC for maintainable app architecture.
-
-## Selected Projects
-
-- **Darzee App** — Flutter tailoring management app with 30,000+ users.
-- **Disport** — React Native sports social platform for Australia.
-- **Faweeth** — Flutter marketplace with Arabic and English localisation.
-- **Medhub** — Medicine delivery app with Django/Python backend.
-- **Your Fish** — Social network for fishing enthusiasts.
-- **Pawpular** — NFT-based pet rewards app.
-- **Jobwish** — AI-powered job platform using OpenAI APIs.
-
-## Certifications
-
-- Claude Code in Action — Anthropic — https://lnkd.in/gDBbTNMb
-- Introduction to Agent Skills — Anthropic — https://lnkd.in/gcemyf9C
-
-## Skills
-
-- Mobile: Flutter, React Native, Android Native, iOS Native
-- Backend: Django, Django REST Framework, GraphQL, WebSockets
-- Languages: Dart, Kotlin, Java, JavaScript, TypeScript, Python
-- Databases: PostgreSQL, SQLite, Firebase, Supabase
-- Web: Next.js, React, HTML, CSS, Tailwind CSS
-- AI: OpenAI API, RAG, function calling, prompt engineering, token optimisation
-- DevOps: GitHub Actions, Fastlane, GitLab CI, Docker basics
+- **Mobile:** Flutter (Dart), React Native, Android Native (Kotlin/Java), iOS Native (Swift)
+- **State & Architecture:** BLoC, GetX, Provider, Clean Architecture, Offline-First SQLite Sync
+- **Backend & Cloud:** Django, Django REST Framework, Python, PostgreSQL, Firebase, Supabase, WebSockets, GraphQL
+- **DevOps & Releases:** Fastlane, GitHub Actions CI/CD, App Store Connect, Google Play Console, TestFlight
+- **Web:** Next.js, React, TypeScript, Tailwind CSS
