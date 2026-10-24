@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="assets/css/styles.css?v=2.1">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2.2">
 </head>
 <body>
 
@@ -49,11 +49,10 @@
     </a>
     <ul class="nav-links">
       <li><a href="#apps">Portfolio</a></li>
-      <li><a href="#robotics">Robotics Lab</a></li>
       <li><a href="#stack">My Stack</a></li>
+      <li><a href="#why">Why Hire Me</a></li>
+      <li><a href="#robotics">Robotics Lab</a></li>
       <li><a href="#github-activity">Code Activity</a></li>
-      <li><a href="#why">Why Partner</a></li>
-      <li><a href="#process">Process</a></li>
       <li><a href="#cta">Contact</a></li>
     </ul>
     <div class="nav-actions">
@@ -106,7 +105,7 @@
             Chat on WhatsApp
           </a>
 
-          <a href="#robotics" class="btn-outline">Robotics Experiments</a>
+          <a href="assets/Arun_Kumar_Resume.pdf" class="btn-outline" target="_blank" rel="noopener">Resume PDF</a>
         </div>
       </div>
 
@@ -181,12 +180,12 @@
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
+  <!-- FEATURED PRODUCTION APPS (TOP PRIORITY SECTION) -->
   <section id="apps">
     <div class="section-wrap">
       <div class="apps-header fade-up">
         <div>
-          <div class="section-label">Mobile &amp; Web Apps</div>
+          <div class="section-label">Mobile &amp; Web Deliverables</div>
           <h2 class="section-title">Featured Production Apps</h2>
         </div>
         <p class="apps-header-desc">Production applications live on App Store, Google Play, and Web.</p>
@@ -388,8 +387,117 @@
     </div>
   </section>
 
+  <!-- MY TECHNICAL STACK -->
+  <section id="stack">
+    <div class="section-wrap">
+      <div class="fade-up">
+        <div class="section-label">Core Expertise &amp; Tools</div>
+        <h2 class="section-title">My Technical Stack</h2>
+        <p class="section-subtitle">Core technologies I use to architect, build, and deploy production mobile and web systems — plus tools I am actively learning in physical AI.</p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-card fade-up" style="--card-accent:#54c5f8;">
+          <div class="stack-tag">Mobile Engineering (5+ Yrs)</div>
+          <div class="stack-name">Flutter &amp; Dart</div>
+          <p class="stack-desc">High-performance native UIs from a single codebase. BLoC, Provider, and GetX architectures powering Darzee, Pawpular, and Faweeth.</p>
+        </div>
+
+        <div class="stack-card fade-up" style="--card-accent:#61dafb; transition-delay:0.08s">
+          <div class="stack-tag">Mobile Engineering (5+ Yrs)</div>
+          <div class="stack-name">React Native</div>
+          <p class="stack-desc">TypeScript-powered native applications. Seamless ecosystem integration powering Disport and The Platform NZ with smooth 60 FPS feeds.</p>
+        </div>
+
+        <div class="stack-card fade-up" style="--card-accent:#d1d5db; transition-delay:0.16s">
+          <div class="stack-tag">Native Mobile</div>
+          <div class="stack-name">Native iOS &amp; Android</div>
+          <p class="stack-desc">Swift, Kotlin, Android SDK, background services, Google Play Console and Apple App Store review compliance.</p>
+        </div>
+
+        <div class="stack-card fade-up" style="--card-accent:#fbbf24; transition-delay:0.24s">
+          <div class="stack-tag">Backend &amp; API</div>
+          <div class="stack-name">Django REST &amp; Python</div>
+          <p class="stack-desc">Scalable REST API endpoints, relational PostgreSQL models, JWT authentication, and WebSocket channels backing mobile client apps.</p>
+        </div>
+
+        <div class="stack-card fade-up" style="--card-accent:#ff6b35; transition-delay:0.32s">
+          <div class="stack-tag" style="color:var(--accent); border-color:var(--accent);">Currently Learning</div>
+          <div class="stack-name">MuJoCo &amp; LeRobot</div>
+          <p class="stack-desc">Physics simulation for robot arms, GLFW teleoperation, dataset recording (parquet/mp4), and Action Chunking Transformer (ACT) imitation learning.</p>
+        </div>
+
+        <div class="stack-card fade-up" style="--card-accent:#c084fc; transition-delay:0.4s">
+          <div class="stack-tag" style="color:#c084fc; border-color:#c084fc;">Currently Learning</div>
+          <div class="stack-name">ROS 2 &amp; MicroDuck</div>
+          <p class="stack-desc">Robot Operating System 2 nodes, publisher-subscriber communication, autonomous micro-robotics, motor control, and sensor telemetry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY HIRE ME -->
+  <section id="why">
+    <div class="section-wrap">
+      <div class="fade-up">
+        <div class="section-label">Key Strengths &amp; Impact</div>
+        <h2 class="section-title">Why Hire Me</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card fade-up">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 11V7a4 4 0 0 0-8 0v4"/><rect x="4" y="11" width="16" height="9" rx="2"/></svg>
+          </div>
+          <div class="why-title">Full Ownership &amp; Speed</div>
+          <p class="why-desc">I take complete ownership from architecture to store release, communicating asynchronously with clear milestones, working builds, and zero guesswork.</p>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.08s">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5"/><path d="M9 2h6"/></svg>
+          </div>
+          <div class="why-title">Battle-Tested at Scale</div>
+          <p class="why-desc">25+ production apps delivered on schedule, with 30,000+ active business users relying on Darzee App daily across India.</p>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.16s">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div class="why-title">Zero Build Rejections</div>
+          <p class="why-desc">Pristine track record across 12+ consecutive App Store and Google Play Store release cycles, strictly adhering to Apple &amp; Google guidelines.</p>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.24s">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4L14 12l-2-2 2.7-3.7z"/></svg>
+          </div>
+          <div class="why-title">End-to-End Mobile &amp; Full-Stack</div>
+          <p class="why-desc">Fluent across Flutter, React Native, iOS Native, Android Native, Django REST, and Next.js. No gaps, no handoffs, no surprises.</p>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.32s">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          </div>
+          <div class="why-title">Autonomous CI/CD Deployment</div>
+          <p class="why-desc">Automated build and release pipelines with Fastlane &amp; GitHub Actions, slashing release cycles from 2 days down to under 2 hours.</p>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.4s">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><circle cx="12" cy="8" r="1.5" fill="currentColor"/><path d="M8.5 13.5L7 22h10l-1.5-8.5"/></svg>
+          </div>
+          <div class="why-title">Continuous Learner</div>
+          <p class="why-desc">In my personal time, I actively explore physical AI, robot arm simulation in MuJoCo, and ROS 2 middleware — staying on the frontier of tech.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ROBOTICS LEARNING LAB SECTION -->
-  <section id="robotics" style="padding: 6.5rem 0 3rem; background: rgba(8, 15, 32, 0.4);">
+  <section id="robotics" style="padding: 6.5rem 0 5rem; background: rgba(8, 15, 32, 0.45); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
     <div class="section-wrap">
       <div class="apps-header fade-up">
         <div>
@@ -453,55 +561,6 @@
     </div>
   </section>
 
-  <!-- MY TECHNICAL STACK -->
-  <section id="stack">
-    <div class="section-wrap">
-      <div class="fade-up">
-        <div class="section-label">Core Expertise &amp; Tools</div>
-        <h2 class="section-title">My Technical Stack</h2>
-        <p class="section-subtitle">Core technologies I use to architect, build, and deploy production mobile and web systems — plus tools I am actively learning in physical AI.</p>
-      </div>
-
-      <div class="stack-grid">
-        <div class="stack-card fade-up" style="--card-accent:#54c5f8;">
-          <div class="stack-tag">Mobile Engineering (5+ Yrs)</div>
-          <div class="stack-name">Flutter &amp; Dart</div>
-          <p class="stack-desc">High-performance native UIs from a single codebase. BLoC, Provider, and GetX architectures powering Darzee, Pawpular, and Faweeth.</p>
-        </div>
-
-        <div class="stack-card fade-up" style="--card-accent:#61dafb; transition-delay:0.08s">
-          <div class="stack-tag">Mobile Engineering (5+ Yrs)</div>
-          <div class="stack-name">React Native</div>
-          <p class="stack-desc">TypeScript-powered native applications. Seamless ecosystem integration powering Disport and The Platform NZ with smooth 60 FPS feeds.</p>
-        </div>
-
-        <div class="stack-card fade-up" style="--card-accent:#d1d5db; transition-delay:0.16s">
-          <div class="stack-tag">Native Mobile</div>
-          <div class="stack-name">Native iOS &amp; Android</div>
-          <p class="stack-desc">Swift, Kotlin, Android SDK, background services, Google Play Console and Apple App Store review compliance.</p>
-        </div>
-
-        <div class="stack-card fade-up" style="--card-accent:#fbbf24; transition-delay:0.24s">
-          <div class="stack-tag">Backend &amp; API</div>
-          <div class="stack-name">Django REST &amp; Python</div>
-          <p class="stack-desc">Scalable REST API endpoints, relational PostgreSQL models, JWT authentication, and WebSocket channels backing mobile client apps.</p>
-        </div>
-
-        <div class="stack-card fade-up" style="--card-accent:#ff6b35; transition-delay:0.32s">
-          <div class="stack-tag" style="color:var(--accent); border-color:var(--accent);">Currently Learning</div>
-          <div class="stack-name">MuJoCo &amp; LeRobot</div>
-          <p class="stack-desc">Physics simulation for robot arms, GLFW teleoperation, dataset recording (parquet/mp4), and Action Chunking Transformer (ACT) imitation learning.</p>
-        </div>
-
-        <div class="stack-card fade-up" style="--card-accent:#c084fc; transition-delay:0.4s">
-          <div class="stack-tag" style="color:#c084fc; border-color:#c084fc;">Currently Learning</div>
-          <div class="stack-name">ROS 2 &amp; MicroDuck</div>
-          <p class="stack-desc">Robot Operating System 2 nodes, publisher-subscriber communication, autonomous micro-robotics, motor control, and sensor telemetry.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- GITHUB ACTIVITY -->
   <section id="github-activity">
     <div class="section-wrap">
@@ -521,109 +580,6 @@
         </p>
         <div class="github-image-container">
           <img src="assets/images/github-commited.png" alt="GitHub Contributions Calendar" class="github-img">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY PARTNER -->
-  <section id="why">
-    <div class="section-wrap">
-      <div class="fade-up">
-        <div class="section-label">Value Proposition</div>
-        <h2 class="section-title">Why Teams &amp; Agencies<br>Partner With Arun</h2>
-      </div>
-
-      <div class="why-grid">
-        <div class="why-card fade-up">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 11V7a4 4 0 0 0-8 0v4"/><rect x="4" y="11" width="16" height="9" rx="2"/></svg>
-          </div>
-          <div class="why-title">White-Label Ready</div>
-          <p class="why-desc">Operates as a seamless extension of your agency or startup team. Transparent communication, documented milestones, and zero friction.</p>
-        </div>
-
-        <div class="why-card fade-up" style="transition-delay:0.08s">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5"/><path d="M9 2h6"/></svg>
-          </div>
-          <div class="why-title">On-Time Delivery</div>
-          <p class="why-desc">25+ production apps shipped on schedule. Reliable sprints and continuous builds ensure commitments are always met without surprises.</p>
-        </div>
-
-        <div class="why-card fade-up" style="transition-delay:0.16s">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          </div>
-          <div class="why-title">Zero Build Rejections</div>
-          <p class="why-desc">Pristine record across 12+ consecutive App Store and Google Play Store release cycles, strictly adhering to Apple &amp; Google guidelines.</p>
-        </div>
-
-        <div class="why-card fade-up" style="transition-delay:0.24s">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4L14 12l-2-2 2.7-3.7z"/></svg>
-          </div>
-          <div class="why-title">End-to-End Ownership</div>
-          <p class="why-desc">Architecture → Development → API Integration → CI/CD Release → Post-Launch Monitoring. Full lifecycle accountability.</p>
-        </div>
-
-        <div class="why-card fade-up" style="transition-delay:0.32s">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          </div>
-          <div class="why-title">Continuous Learner</div>
-          <p class="why-desc">Strong mobile and backend production foundation, actively advancing knowledge in Python ML, MuJoCo simulation, and ROS 2 robotics.</p>
-        </div>
-
-        <div class="why-card fade-up" style="transition-delay:0.4s">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><circle cx="12" cy="8" r="1.5" fill="currentColor"/><path d="M8.5 13.5L7 22h10l-1.5-8.5"/></svg>
-          </div>
-          <div class="why-title">Proven At Scale</div>
-          <p class="why-desc">Real applications with up to 30,000+ active business users across sports, lifestyle, logistics, and B2B procurement verticals.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section id="process">
-    <div class="section-wrap">
-      <div class="fade-up">
-        <div class="section-label">Process</div>
-        <h2 class="section-title">Production Delivery Pipeline</h2>
-        <p class="section-subtitle">How every project moves from concept to live deployment on the App Store and Google Play.</p>
-      </div>
-
-      <div class="process-steps">
-        <div class="process-step fade-up">
-          <div class="step-num">01</div>
-          <div class="step-title">Discovery</div>
-          <p class="step-desc">Deep requirements scoping, user persona mapping, and technical constraint assessment to build on a solid architectural foundation.</p>
-        </div>
-
-        <div class="process-step fade-up" style="transition-delay:0.08s">
-          <div class="step-num">02</div>
-          <div class="step-title">Design &amp; Proto</div>
-          <p class="step-desc">Wireframing, UI/UX interaction flows, state machine design, and database schema mapping prior to writing production code.</p>
-        </div>
-
-        <div class="process-step fade-up" style="transition-delay:0.16s">
-          <div class="step-num">03</div>
-          <div class="step-title">Development</div>
-          <p class="step-desc">Agile development sprints with regular working builds. Clean modular code, BLoC/Provider state, and responsive multi-platform testing.</p>
-        </div>
-
-        <div class="process-step fade-up" style="transition-delay:0.24s">
-          <div class="step-num">04</div>
-          <div class="step-title">QA &amp; Audit</div>
-          <p class="step-desc">Physical hardware testing, network profiling, memory leak detection, and 60 FPS rendering checks across iOS and Android devices.</p>
-        </div>
-
-        <div class="process-step fade-up" style="transition-delay:0.32s">
-          <div class="step-num">05</div>
-          <div class="step-title">Store Launch</div>
-          <p class="step-desc">End-to-end App Store &amp; Play Store submission, compliance verification, Fastlane automated releases, and listing optimization.</p>
         </div>
       </div>
     </div>
