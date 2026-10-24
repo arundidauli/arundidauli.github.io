@@ -1,6 +1,6 @@
-# Arun Kumar — Team Lead & Senior Mobile Engineer · Robotics Practitioner
+# Arun Kumar — Senior Mobile Engineer & Team Lead
 
-> 5+ years architecting and shipping production software across **Flutter, React Native, iOS, Android**, and **Django/Next.js** backends. Active practitioner in **Physical AI & Robotics** with **Python ML, MuJoCo, Hugging Face LeRobot, ROS 2, and MicroDuck**.
+> 5+ years architecting and shipping production software across **Flutter, React Native, iOS, Android**, and **Django/Next.js** backends (30,000+ active users on flagship client applications). In parallel, actively learning and experimenting with **Physical AI & Robotics** (**Python ML, MuJoCo, Hugging Face LeRobot, ROS 2, and MicroDuck**).
 
 - 🌐 **Live Portfolio:** [arundidauli.github.io](https://arundidauli.github.io/)
 - 📄 **Direct Resume (PDF):** [View Resume](https://arundidauli.github.io/assets/Arun_Kumar_Resume.pdf)
@@ -15,16 +15,9 @@
 
 - **30,000+ Active Users:** Scaled [Darzee App](https://darzeeapp.com/) on Play Store & App Store with offline-first BLoC architecture.
 - **Independent Startup:** Designed, built, and launched [Bicholiyas](https://bicholiyas.in/) end-to-end across Next.js, Django REST, PostgreSQL, and Flutter.
-- **Robotics & Embodied AI:** Simulated [SO-101 robot-arm mini-lab](https://github.com/arundidauli/robotic-lab) in MuJoCo, generating LeRobot v2.1 datasets and ACT policy training. MicroDuck autonomous navigation with ROS 2.
 - **Fastlane & CI/CD:** Cut App Store release turnaround time from 2 days down to under 2 hours.
 - **Zero Build Rejections:** 100% first-pass approval record across 12+ consecutive release cycles.
-
----
-
-## 🤖 Robotics Lab & Physical AI
-
-1. **[SO-101 Robotic Lab](https://github.com/arundidauli/robotic-lab)** (`MuJoCo 3.10` `Python ML` `Hugging Face LeRobot v2.1` `PyTorch` `SO-ARM100`) — 30 Hz GLFW teleoperation, dataset recording, Action Chunking Transformer (ACT) imitation learning.
-2. **MicroDuck Autonomous Robot** (`ROS 2` `Python ML` `MicroDuck` `Computer Vision`) — Micro-robotic navigation, ROS 2 publisher-subscriber nodes, and real-time mobile control telemetry.
+- **Learning & Exploration in Physical AI:** Simulated [SO-101 robot arm mini-lab](https://github.com/arundidauli/robotic-lab) in MuJoCo, generating LeRobot v2.1 datasets and exploring ACT policy training. MicroDuck mobile robotics experiments with ROS 2.
 
 ---
 
@@ -41,11 +34,18 @@
 
 ---
 
-## 🛠️ Technical Competencies
+## 🤖 Learning Lab: Robotics & Physical AI Experiments
 
-- **Mobile:** Flutter (Dart), React Native, Android Native (Kotlin/Java), iOS Native (Swift)
-- **Robotics & Embodied AI:** Python ML, MuJoCo 3.10, Hugging Face LeRobot, ROS 2, MicroDuck, PyTorch, ACT Policies
+1. **[SO-101 Robotic Lab](https://github.com/arundidauli/robotic-lab)** (`MuJoCo 3.10` `Python ML` `Hugging Face LeRobot v2.1` `PyTorch` `SO-ARM100`) — 30 Hz GLFW teleoperation, dataset recording, Action Chunking Transformer (ACT) imitation learning experiments.
+2. **MicroDuck Autonomous Robot** (`ROS 2` `Python ML` `MicroDuck` `Computer Vision`) — Micro-robotic vehicle experiments, ROS 2 publisher-subscriber nodes, and real-time mobile telemetry.
+
+---
+
+## 🛠️ My Technical Stack
+
+- **Mobile Engineering (5+ Yrs):** Flutter (Dart), React Native, Android Native (Kotlin/Java), iOS Native (Swift)
 - **State & Architecture:** BLoC, GetX, Provider, Clean Architecture, Offline-First SQLite Sync
 - **Backend & Cloud:** Django, Django REST Framework, Python, PostgreSQL, Firebase, Supabase, WebSockets, GraphQL
 - **DevOps & Releases:** Fastlane, GitHub Actions CI/CD, App Store Connect, Google Play Console, TestFlight
 - **Web:** Next.js, React, TypeScript, Tailwind CSS
+- **Currently Learning:** Python ML, MuJoCo 3.10, Hugging Face LeRobot, ROS 2, MicroDuck, ACT Policies
